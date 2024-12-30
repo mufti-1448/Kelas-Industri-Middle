@@ -1,4 +1,4 @@
-package com.mufti.kl_midel
+package com.mufti.kl_midel.impl.mddl1
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider

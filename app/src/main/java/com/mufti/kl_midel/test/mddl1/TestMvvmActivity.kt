@@ -1,4 +1,4 @@
-package com.mufti.kl_midel
+package com.mufti.kl_midel.test.mddl1
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -9,13 +9,14 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import com.mufti.kl_midel.R
 import com.mufti.kl_midel.databinding.ActivityMainBinding
 import kotlinx.coroutines.launch
 
-class MainActivity : AppCompatActivity() {
+class TestMvvmActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
-    private lateinit var viewModel: MvvmViewModel
+    private lateinit var viewModel: TestMvvmViewModel
     private var counter: Int = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,7 +35,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         // Inisialisasi ViewModel
-        viewModel = ViewModelProvider(this, MvvmViewModel.Factory)[MvvmViewModel::class.java]
+        viewModel = ViewModelProvider(this, TestMvvmViewModel.Factory)[TestMvvmViewModel::class.java]
 
         // Mengamati perubahan data ViewModel
         lifecycleScope.launch {

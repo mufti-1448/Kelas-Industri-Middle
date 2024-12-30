@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="horizontal"
-    tools:context=".MainActivity">
+    tools:context=".impl.mddl1.MvvmActivity">
 
     <Button
         android:id="@+id/btn_min"
